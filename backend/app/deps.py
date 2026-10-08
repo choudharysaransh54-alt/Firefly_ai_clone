@@ -1,7 +1,7 @@
 """Shared FastAPI dependencies and helpers used by the routers."""
 from typing import TypeVar
 
-from fastapi import Depends, HTTPException
+from fastapi import Cookie, Depends, Header, HTTPException
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -12,12 +12,55 @@ from .services import meeting_service
 T = TypeVar("T")
 
 
-def get_current_user(db: Session = Depends(get_db)) -> models.User:
-    """Authentication is out of scope: every request acts as the default (seeded) user.
-    Swapping in real auth only means changing this one function."""
-    user = db.scalar(select(models.User).order_by(models.User.id))
+# In-memory session tracking for authenticated users: token -> user_id
+ACTIVE_SESSIONS: dict[str, int] = {}
+_is_logged_out: bool = False
+
+
+def set_logged_out(val: bool) -> None:
+    global _is_logged_out
+    _is_logged_out = val
+
+
+def get_current_user_optional(
+    authorization: str | None = Header(None),
+    auth_token: str | None = Cookie(None),
+    db: Session = Depends(get_db),
+) -> models.User | None:
+    """Extracts authenticated user from Bearer header or auth_token cookie."""
+    global _is_logged_out
+    token = None
+    if authorization and authorization.startswith("Bearer "):
+        token = authorization.split("Bearer ", 1)[1].strip()
+    elif auth_token:
+        token = auth_token
+
+    if token:
+        user_id = ACTIVE_SESSIONS.get(token)
+        if user_id:
+            user = db.get(models.User, user_id)
+            if user:
+                return user
+        # Token provided but not found in active sessions
+        return None
+
+    # If the user has explicitly logged out, do not fall back to default user
+    if _is_logged_out:
+        return None
+
+    # Fallback default user for seamless local demo before explicit logout
+    return db.scalar(select(models.User).order_by(models.User.id))
+
+
+def get_current_user(
+    authorization: str | None = Header(None),
+    auth_token: str | None = Cookie(None),
+    db: Session = Depends(get_db),
+) -> models.User:
+    """Dependency that ensures user is authenticated, raising 401 if logged out."""
+    user = get_current_user_optional(authorization, auth_token, db)
     if user is None:
-        raise HTTPException(status_code=500, detail="Default user is missing. Run the seed script.")
+        raise HTTPException(status_code=401, detail="Not authenticated. Please log in.")
     return user
 
 

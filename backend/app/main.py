@@ -10,7 +10,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .database import Base, SessionLocal, engine
-from .routers import action_items, comments, meetings, workspace
+from .routers import action_items, auth, comments, meetings, workspace
 from .seed.seed import seed_if_empty
 
 
@@ -25,16 +25,16 @@ async def lifespan(_app: FastAPI):
 
 app = FastAPI(title="Fireflies Clone API", version="1.0.0", lifespan=lifespan)
 
-# The Next.js frontend runs on a different origin, so the browser needs CORS headers.
-allowed_origins = os.getenv("CORS_ORIGINS", "*").split(",")
+# CORS setup with support for cookies and authorization headers
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[origin.strip() for origin in allowed_origins],
+    allow_origin_regex=r"https?://.*",
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-for router in (meetings.router, action_items.router, comments.router, workspace.router):
+for router in (auth.router, meetings.router, action_items.router, comments.router, workspace.router):
     app.include_router(router, prefix="/api")
 
 

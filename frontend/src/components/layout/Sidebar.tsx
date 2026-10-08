@@ -258,9 +258,15 @@ export function Sidebar({ onUpload }: { onUpload: () => void }) {
                   </div>
                   <button
                     type="button"
-                    onClick={() => {
+                    onClick={async () => {
                       setUserMenuOpen(false);
-                      toast.info("Logged out from Fireflies");
+                      try {
+                        await api.logout();
+                        toast.info("Logged out from Fireflies");
+                        window.location.href = "/login";
+                      } catch {
+                        window.location.href = "/login";
+                      }
                     }}
                     className="w-full text-left hover:text-white transition-colors pt-1 text-[#8e8ea0]"
                   >

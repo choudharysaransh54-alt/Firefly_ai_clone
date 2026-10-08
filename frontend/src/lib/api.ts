@@ -19,11 +19,23 @@ import type {
 export const API_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000").replace(/\/$/, "");
 
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
+  const token = typeof window !== "undefined" ? localStorage.getItem("fireflies_token") : null;
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    ...(options.headers as Record<string, string>),
+  };
+
   const response = await fetch(`${API_URL}/api${path}`, {
     ...options,
-    headers: { "Content-Type": "application/json", ...options.headers },
+    headers,
+    credentials: "include",
   });
   if (!response.ok) {
+    if (response.status === 401 && typeof window !== "undefined" && !window.location.pathname.startsWith("/login")) {
+      localStorage.removeItem("fireflies_token");
+      window.location.href = "/login";
+    }
     const body = await response.json().catch(() => null);
     throw new Error(readErrorMessage(body) ?? `Request failed (${response.status})`);
   }
@@ -53,6 +65,24 @@ const json = (method: string, body?: unknown): RequestInit => ({
 });
 
 export const api = {
+  login: async (credentials?: { email?: string; password?: string }) => {
+    const res = await request<{ token: string; user: User; status: string }>("/auth/login", json("POST", credentials ?? {}));
+    if (typeof window !== "undefined" && res?.token) {
+      localStorage.setItem("fireflies_token", res.token);
+    }
+    return res;
+  },
+
+  logout: async () => {
+    try {
+      await request("/auth/logout", json("POST", {}));
+    } finally {
+      if (typeof window !== "undefined") {
+        localStorage.removeItem("fireflies_token");
+      }
+    }
+  },
+
   getMe: () => request<User>("/me"),
   updateMe: (data: Partial<Pick<User, "name" | "email" | "avatar_url">>) =>
     request<User>("/me", json("PATCH", data)),

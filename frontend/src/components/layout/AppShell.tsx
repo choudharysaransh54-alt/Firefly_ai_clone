@@ -2,6 +2,7 @@
 
 import { createContext, useCallback, useContext, useState, type ReactNode } from "react";
 import { ArrowRight, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { NewMeetingModal } from "../meetings/NewMeetingModal";
 import { Sidebar } from "./Sidebar";
 import { Topbar } from "./Topbar";
@@ -12,9 +13,14 @@ export const useOpenNewMeeting = () => useContext(NewMeetingContext);
 
 /** Fireflies exact shell layout */
 export function AppShell({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
   const [newMeetingOpen, setNewMeetingOpen] = useState(false);
   const [bannerDismissed, setBannerDismissed] = useState(false);
   const openNewMeeting = useCallback(() => setNewMeetingOpen(true), []);
+
+  if (pathname === "/login") {
+    return <div className="h-screen w-screen overflow-y-auto bg-[#131314] text-white">{children}</div>;
+  }
 
   return (
     <NewMeetingContext.Provider value={openNewMeeting}>
