@@ -1,0 +1,3 @@
+[
+  {"speaker": "Alice", "start": 0, "text": "This JSON file is cut off in the middle"},
+  {"speaker": "Bob", "start": 5, "text": "so it should be rejected with a clear error

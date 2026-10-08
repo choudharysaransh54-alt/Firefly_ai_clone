@@ -1,0 +1,6 @@
+[00:00] Olivia Park: This first utterance is long, and the tool that exported it
+wrapped the text onto a second line, and then
+onto a third line as well.
+[00:14] Ethan Brooks: Short reply, no wrapping here.
+[00:18] Olivia Park: Another wrapped utterance
+that continues on the next line. I'll send the notes after the call.

@@ -1,0 +1,16 @@
+Ines Duarte: Okay team, today we're brainstorming the focus mode feature. The goal is to help people protect deep work time without missing anything important.
+Marco Bianchi: From the customer interviews, the biggest complaint is notification overload. People get pinged during every meeting and lose their train of thought.
+Yuki Sato: I sketched three directions. The first is a simple do not disturb toggle. The second is scheduled focus blocks synced with the calendar. The third is a smart mode that only lets urgent messages through.
+Ben Carter: The toggle is easy to build. The calendar sync is medium effort because we already have the calendar integration. The smart mode needs a model to decide what's urgent, which is much harder.
+Ines Duarte: I like starting with scheduled focus blocks. It matches how people already plan their week.
+Marco Bianchi: Agreed. And we could show a summary of everything you missed when the focus block ends, so people don't feel anxious about turning notifications off.
+Yuki Sato: Oh, I love that. A catch up card with the three most important things that happened.
+Ben Carter: We could reuse the meeting summary component for that card. It already supports bullets and links.
+Ines Duarte: What should we call it? Focus mode feels generic.
+Marco Bianchi: Maybe deep work blocks? Or quiet hours?
+Yuki Sato: Quiet hours sounds friendly, but it sounds like something for the evening. Focus blocks is clearer.
+Ines Duarte: Let's test both names with five customers before deciding. Yuki, can you add the naming question to next week's usability sessions?
+Yuki Sato: Yes, I'll add it to the test script and also prototype the catch up card.
+Ben Carter: I'll do a technical spike on syncing focus blocks with Google Calendar and Outlook, and estimate the effort.
+Marco Bianchi: I'll write the one page product brief with the problem, the target users, and how we'll measure success.
+Ines Duarte: Great. Let's regroup on Thursday with the prototype, the spike results and the brief.

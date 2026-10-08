@@ -1,0 +1,16 @@
+Rebecca Stone (00:00): Hey Tom, thanks for making time. How has your week been?
+Tom Alvarez (00:08): Pretty good overall. The search migration is finally done, so I feel like I can breathe again.
+Rebecca Stone (00:16): Congrats, that was a big one. I heard great feedback from the support team about the faster results.
+Tom Alvarez (00:25): Thanks. Honestly the last week was stressful because the rollback plan wasn't clear until the very end.
+Rebecca Stone (00:36): That's fair feedback. For the next migration, let's write the rollback plan before we start. Can you add that to our project template?
+Tom Alvarez (00:47): Sure, I'll update the template this week.
+Rebecca Stone (00:53): I wanted to talk about your growth plan. Last time you said you're interested in the senior engineer promotion next cycle.
+Tom Alvarez (01:05): Yes. I think I'm doing senior level work on the technical side, but I'm less sure about the leadership part.
+Rebecca Stone (01:16): I agree on the technical side. The gap I see is leading projects across teams. The search migration was a great start because you coordinated with support and data.
+Tom Alvarez (01:31): What would be a good next step?
+Rebecca Stone (01:36): I'd like you to lead the design review for the notifications rewrite. It involves three teams, and you'd own the decision document.
+Tom Alvarez (01:48): I'd love that. I'll draft the design document and share it with you by next Friday.
+Rebecca Stone (01:56): Great. I'll also connect you with Priya from the platform team, she ran the last cross-team project and has good advice.
+Tom Alvarez (02:06): That would help. One more thing, could we move our one on ones to Thursdays? Mondays are full of planning meetings.
+Rebecca Stone (02:15): Of course. I'll move the calendar invite to Thursday afternoons starting next week.
+Tom Alvarez (02:22): Thanks Rebecca.

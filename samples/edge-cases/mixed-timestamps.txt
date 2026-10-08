@@ -1,0 +1,7 @@
+[00:00:00] Alice Ng: Let's start. Only some lines in this file have timestamps.
+Bob Stone: The lines without a time get an estimated start time based on speaking speed.
+Alice Ng: That's fine for us. Bob, can you share the agenda in the chat?
+Bob Stone: Done.
+[00:01:30] Carla Diaz: Sorry I'm late. This line has a real timestamp again, a minute and a half in.
+Alice Ng: No problem Carla. We just started on the agenda.
+Carla Diaz: I'll catch up from the transcript afterwards.

@@ -1,0 +1,67 @@
+{
+  "title": "Design Review: Onboarding Flow v2",
+  "days_ago": 3,
+  "time": "13:00",
+  "source": "google_meet",
+  "tags": ["Design", "Product"],
+  "participants": [
+    {"name": "Sofia Alvarez", "email": "sofia@acme.io"},
+    {"name": "Jordan Rivera", "email": "jordan@acme.io"},
+    {"name": "Ravi Patel", "email": "ravi@acme.io"},
+    {"name": "Emily Watson", "email": "emily@acme.io"}
+  ],
+  "overview": [
+    "38% of new signups drop off at the calendar connection step because they haven't seen any value yet.",
+    "Onboarding v2 leads with a sample meeting, then upload or paste; calendar connection becomes an optional third step.",
+    "In usability tests 4 of 5 people completed the new flow, compared with 2 of 5 for the old one.",
+    "Fixes before launch: a skip option, a progress bar, clearer upload errors and WCAG AA button contrast.",
+    "The flow ships behind a feature flag as a 50/50 A/B test, measured on 7-day activation."
+  ],
+  "keywords": ["Onboarding", "Calendar", "Usability testing", "A/B test", "Activation", "Accessibility"],
+  "chapters": [
+    {"line": 0, "title": "The calendar drop-off problem", "summary": "38% of signups abandon onboarding at the calendar connection step."},
+    {"line": 3, "title": "New value-first flow", "summary": "Sample meeting first, then upload or paste, with calendar connection as an optional third step."},
+    {"line": 10, "title": "Usability test results", "summary": "4 of 5 users finished the new flow vs 2 of 5 before; one person failed on an unclear upload error."},
+    {"line": 15, "title": "Polish: skip, contrast & errors", "summary": "Add a skip option, fix button contrast for WCAG AA, and make file size errors actionable."},
+    {"line": 19, "title": "Rollout & metrics", "summary": "A 50/50 A/B test behind a feature flag; the primary metric is 7-day activation."}
+  ],
+  "action_items": [
+    {"line": 23, "text": "Finalize onboarding designs with the skip option, progress bar and new button colors", "assignee": "Sofia Alvarez"},
+    {"line": 14, "text": "Show the upload size limit up front and add a clear 'file too large' error", "assignee": "Ravi Patel"},
+    {"line": 24, "text": "Build the new onboarding flow behind a feature flag", "assignee": "Ravi Patel"},
+    {"line": 25, "text": "Write the help center article and brief the support team", "assignee": "Emily Watson"},
+    {"line": 18, "text": "Update button colors to meet WCAG AA contrast", "assignee": "Sofia Alvarez", "done": true}
+  ],
+  "comments": [
+    {"line": 1, "body": "Can we get this drop-off broken down by signup source?"}
+  ],
+  "transcript": [
+    "Sofia Alvarez: Thanks for coming. Today I want feedback on version two of onboarding. I'll share my screen. The short version is that we lose too many people before they ever see a transcript.",
+    "Sofia Alvarez: Right now thirty eight percent of new signups drop off at the calendar connection step. They don't trust us with their calendar before they've seen any value.",
+    "Emily Watson: That lines up with support tickets. People ask why we need calendar access before they've done anything.",
+    "Sofia Alvarez: So the new flow flips the order. Step one, you see a sample meeting with a real transcript, summary and action items. Step two, you upload a recording or paste a transcript. Calendar connection becomes step three, and it's optional.",
+    "Jordan Rivera: I really like leading with value. What does the sample meeting look like?",
+    "Sofia Alvarez: It's a fake product sync with three speakers. You can click around the transcript, play it, and see the summary update. We highlight three features with small tooltips.",
+    "Ravi Patel: From an engineering point of view, the sample meeting is easy. We can ship it as static data, so no backend work is needed.",
+    "Emily Watson: One concern. If calendar connection is optional, will people forget to do it? Most of the long term value comes from the bot joining meetings automatically.",
+    "Sofia Alvarez: Good point. We'd remind them after their first uploaded meeting is processed, when they've already seen the value. The prompt says something like, want this for every meeting automatically?",
+    "Jordan Rivera: That's a much better moment to ask. I'd also add a progress indicator so people know how many steps are left.",
+    "Sofia Alvarez: Yes, I tested that. In the usability sessions, people with a progress bar were more likely to finish. Let me show you the results.",
+    "Sofia Alvarez: We ran five sessions. Four out of five people completed the new flow without help. With the old flow, only two out of five did.",
+    "Emily Watson: That's a big jump. What tripped up the one person who didn't finish?",
+    "Sofia Alvarez: The upload step. They had a video file that was larger than our limit, and the error message just said upload failed. They didn't know what to do next.",
+    "Ravi Patel: We can fix that easily. I'll show the file size limit up front and add a clear error message that says the file is too large and suggests compressing it or pasting a transcript instead.",
+    "Jordan Rivera: Can we also add a skip option on step two? Some people just want to look around first.",
+    "Sofia Alvarez: Agreed, I'll add a skip link that takes them straight to the dashboard with the sample meeting pinned.",
+    "Ravi Patel: One more thing from my side. The purple text on the light purple buttons fails the contrast check. We should fix that before we ship anything.",
+    "Sofia Alvarez: Good catch. I'll update the button colors so they meet the WCAG AA contrast ratio.",
+    "Jordan Rivera: How do we want to roll this out? I'd rather not switch everyone at once.",
+    "Ravi Patel: We can put it behind a feature flag and do a fifty fifty A B test. The flag system already supports percentage rollouts.",
+    "Emily Watson: If we A B test, let's measure activation at seven days, not just completion of the onboarding flow. Completing onboarding doesn't help if they never come back.",
+    "Jordan Rivera: Agreed. Primary metric is seven day activation, meaning they processed at least two meetings. Secondary metric is onboarding completion.",
+    "Sofia Alvarez: Great. So I'll finalize the designs with the skip option, the progress bar and the new button colors by Friday.",
+    "Ravi Patel: And I'll start building behind the feature flag next week, starting with the sample meeting and the upload error handling.",
+    "Emily Watson: I'll write the help center article for the new flow and brief the support team before the test starts.",
+    "Jordan Rivera: Perfect. Let's target starting the A B test in two weeks. Thanks Sofia, this is a really strong piece of work."
+  ]
+}

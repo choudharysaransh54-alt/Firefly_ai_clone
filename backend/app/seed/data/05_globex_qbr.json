@@ -1,0 +1,67 @@
+{
+  "title": "Globex Quarterly Business Review",
+  "days_ago": 6,
+  "time": "11:00",
+  "source": "teams",
+  "tags": ["Customer", "QBR"],
+  "participants": [
+    {"name": "Emily Watson", "email": "emily@acme.io"},
+    {"name": "Daniel Okafor", "email": "daniel@acme.io"},
+    {"name": "Grace Liu", "email": "grace.liu@globex.example"},
+    {"name": "Jordan Rivera", "email": "jordan@acme.io"}
+  ],
+  "overview": [
+    "Globex adoption reached 84% weekly active across 150 seats, up from 61% last quarter.",
+    "Managers save about 5 hours a week; automatic action items are the most-loved feature.",
+    "Pain points: transcript accuracy for strong accents and speaker identification in shared conference rooms.",
+    "Requests: custom vocabulary and a Zendesk integration that attaches call summaries to tickets.",
+    "The contract renews in February with a planned 50-seat expansion, which depends on SSO shipping this quarter."
+  ],
+  "keywords": ["Adoption", "Renewal", "Expansion", "Zendesk", "Accuracy", "ROI"],
+  "chapters": [
+    {"line": 2, "title": "Adoption & impact", "summary": "84% weekly active across 150 seats (up from 61%); managers save about 5 hours a week."},
+    {"line": 7, "title": "Accuracy & speaker ID feedback", "summary": "Accent accuracy issues for the Manila team and speaker confusion in conference rooms; a new speech model is coming."},
+    {"line": 11, "title": "Feature requests", "summary": "Custom vocabulary for product names and a Zendesk integration that attaches summaries to tickets."},
+    {"line": 16, "title": "Renewal & expansion", "summary": "February renewal with 50 extra seats, dependent on SSO; one- and two-year options requested."},
+    {"line": 21, "title": "Training & executive sponsor", "summary": "Training for the customer success team and an ROI summary for Globex's VP of Support."}
+  ],
+  "action_items": [
+    {"line": 12, "text": "Enroll Globex's Manila team in the new speech model early access program", "assignee": "Emily Watson"},
+    {"line": 14, "text": "Come back to Grace with a Zendesk integration timeline", "assignee": "Jordan Rivera"},
+    {"line": 20, "text": "Send a renewal proposal with 50 extra seats and one- and two-year options", "assignee": "Daniel Okafor"},
+    {"line": 21, "text": "Schedule a 45-minute training for the customer success team", "assignee": "Emily Watson"},
+    {"line": 23, "text": "Send an ROI summary for Globex's VP of Support", "assignee": "Emily Watson"},
+    {"line": 25, "text": "Send the QBR recap with next steps", "assignee": "Emily Watson", "done": true}
+  ],
+  "comments": [
+    {"line": 17, "body": "SSO is the gating item for both Globex and Northwind. Flagging this to Marcus."}
+  ],
+  "transcript": [
+    "Emily Watson: Hi Grace, welcome to the quarterly business review. I'll walk through adoption and impact, then I'd love to hear your feedback, and we'll finish with the roadmap and renewal.",
+    "Grace Liu: Sounds great. I've got about thirty minutes.",
+    "Emily Watson: Let's start with adoption. You have one hundred and fifty seats, and eighty four percent of them were weekly active last quarter. That's up from sixty one percent the quarter before.",
+    "Grace Liu: That's good to see. The support managers especially use it every day for escalation calls.",
+    "Emily Watson: On impact, your managers told us they save about five hours a week on note taking and follow ups. Across the team that's roughly the equivalent of three full time people.",
+    "Grace Liu: That's consistent with what I hear. The automatic action items are the favorite feature. Nobody has to chase who promised what after a call.",
+    "Daniel Okafor: That's great to hear. Are there areas where it's not working as well?",
+    "Grace Liu: Yes, two things. First, transcript accuracy for some of our agents with strong accents is noticeably worse. Our team in Manila sees more errors than the team in Dublin.",
+    "Grace Liu: Second, speaker identification gets confused when several people join from the same conference room.",
+    "Jordan Rivera: Thanks, that's really useful. On accents, we're rolling out a new speech model next month that was trained on a much more diverse dataset. Early tests show about thirty percent fewer errors for non native speakers.",
+    "Jordan Rivera: For conference rooms, the fix is harder. One option is a custom vocabulary plus manual speaker labels that the model learns from over time.",
+    "Grace Liu: Custom vocabulary would help a lot anyway. Our product names get transcribed wrong all the time.",
+    "Emily Watson: I'll set you up for the early access program for the new speech model, so your Manila team can try it first.",
+    "Grace Liu: Perfect. The other big request is a Zendesk integration. Our support tickets live in Zendesk, and agents want call summaries attached to the ticket automatically.",
+    "Jordan Rivera: That's been requested by a few support teams. It's not on the Q4 roadmap, but I'll take it back to the team and come back with a timeline.",
+    "Grace Liu: Even a rough timeline would help me plan.",
+    "Daniel Okafor: Let's talk about the renewal. Your contract renews in February. Based on the adoption, are you thinking about expanding?",
+    "Grace Liu: Yes. Our customer success team wants fifty more seats. The blocker for them is SSO, our security team won't approve more users without it.",
+    "Daniel Okafor: SSO with SAML is shipping this quarter, so the timing works well for a February renewal.",
+    "Grace Liu: Then I'd like a renewal proposal that includes the extra fifty seats, and ideally a multi year option.",
+    "Daniel Okafor: I'll prepare a proposal with one year and two year options, including the expansion, and send it by the end of next week.",
+    "Emily Watson: I'd also suggest a short training session for the customer success team before they're onboarded, to get adoption high from day one.",
+    "Grace Liu: Yes, please. A forty five minute session would be ideal. Let's also add our VP of Support as an executive sponsor, she's been asking about ROI.",
+    "Emily Watson: Great, I'll send an ROI summary she can share internally, based on the time savings we discussed.",
+    "Grace Liu: Perfect. This was a productive review. Thank you all.",
+    "Emily Watson: Thanks Grace. I'll send a recap with all of the next steps today."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Q4 Product Roadmap Planning",
+  "days_ago": 0,
+  "time": "10:00",
+  "source": "google_meet",
+  "tags": ["Product", "Planning"],
+  "participants": [
+    {"name": "Jordan Rivera", "email": "jordan@acme.io"},
+    {"name": "Priya Sharma", "email": "priya@acme.io"},
+    {"name": "Marcus Chen", "email": "marcus@acme.io"},
+    {"name": "Sofia Alvarez", "email": "sofia@acme.io"},
+    {"name": "Hannah Kim", "email": "hannah@acme.io"}
+  ],
+  "overview": [
+    "AI search is the headline Q4 theme: only 18% of weekly active users search today and it is the top NPS complaint.",
+    "AI search launches on November 18 (internal beta November 4) and will index the last 12 months of transcripts.",
+    "Enterprise SSO (SAML via Okta and Azure AD) ships in Q4 to unblock the Northwind and Globex deals.",
+    "The mobile app beta moves to January; one designer keeps working on it and runs usability tests.",
+    "The team is one backend engineer short for the indexing work, so hiring needs to be prioritized."
+  ],
+  "keywords": ["AI search", "Roadmap", "Enterprise SSO", "Mobile beta", "Capacity", "Launch"],
+  "chapters": [
+    {"line": 1, "title": "Q3 results & search usage", "summary": "Activation grew 12% quarter over quarter, but only 18% of weekly active users run a search and it is the top NPS complaint."},
+    {"line": 6, "title": "Q4 candidate themes", "summary": "AI search, the mobile app beta and enterprise SSO were proposed and ranked with RICE scoring."},
+    {"line": 10, "title": "Capacity & the mobile beta decision", "summary": "Nine engineers (about three squads) are available, so the mobile beta was pushed to January."},
+    {"line": 17, "title": "AI search scope & launch date", "summary": "Semantic search over the last 12 months of transcripts, with results that jump to the exact timestamp. Launch on November 18."},
+    {"line": 27, "title": "Owners & recap", "summary": "Owners were assigned for SSO, capacity planning and launch messaging; Jordan will share the roadmap with leadership."}
+  ],
+  "action_items": [
+    {"line": 28, "text": "Prepare the detailed Q4 capacity plan with squad assignments", "assignee": "Priya Sharma"},
+    {"line": 22, "text": "Deliver AI search mockups, including empty and error states", "assignee": "Sofia Alvarez"},
+    {"line": 27, "text": "Run the SSO technical spike for Okta and Azure AD", "assignee": "Marcus Chen", "done": true},
+    {"line": 26, "text": "Draft AI search launch messaging and a blog outline", "assignee": "Hannah Kim"},
+    {"line": 16, "text": "Update the mobile waitlist email with the January date", "assignee": "Hannah Kim"},
+    {"line": 31, "text": "Share the Q4 roadmap doc with the leadership team", "assignee": "Jordan Rivera"}
+  ],
+  "comments": [
+    {"line": 25, "body": "Let's double-check that Nov 18 doesn't clash with the Thanksgiving code freeze."}
+  ],
+  "transcript": [
+    "Jordan Rivera: Morning everyone, thanks for joining. The goal today is to lock the Q4 roadmap. I'd like to leave this call with three committed themes, owners for each, and a rough launch date for the biggest one.",
+    "Priya Sharma: Sounds good. Before we jump in, can we spend two minutes on how Q3 went? I think the numbers change how we should prioritize.",
+    "Jordan Rivera: Yes, go for it.",
+    "Priya Sharma: So activation was up twelve percent quarter over quarter, mostly from the new onboarding checklist. But search usage is still flat. Only about eighteen percent of weekly active users ran a search in the last month.",
+    "Hannah Kim: That matches what we hear from customers. People record everything but then struggle to find the moment where a decision was made. Search is the number one complaint in our NPS comments.",
+    "Marcus Chen: Part of that is technical. Our current search is keyword only, and it times out on workspaces with more than ten thousand meetings. We patched the timeouts but the relevance is still poor.",
+    "Jordan Rivera: Okay, that's a strong case for making AI search the headline theme for Q4. Let's list all the candidates first and then rank them.",
+    "Sofia Alvarez: From the design side I'd add the mobile app beta. We have the designs mostly done and a waitlist of about four thousand people.",
+    "Marcus Chen: And enterprise SSO. We have two enterprise deals, Northwind and Globex, that are blocked on SAML support. Sales keeps asking me for a date.",
+    "Hannah Kim: For marketing, a launch moment matters more than the specific feature. If AI search is ready by mid November we can tie it to the fall campaign.",
+    "Jordan Rivera: Great. So we have AI search, the mobile beta, and enterprise SSO. Let's use RICE scoring like last quarter. Priya, what does capacity look like?",
+    "Priya Sharma: We have nine engineers for the quarter after holidays and on-call. Realistically that's about three focused squads. AI search alone needs two squads if we want it by November.",
+    "Marcus Chen: SSO is smaller than people think. With an identity provider library it's about three weeks for one engineer, plus a week of security review.",
+    "Sofia Alvarez: The mobile beta is the one that worries me. It needs a full squad for at least eight weeks, and we haven't solved offline playback yet.",
+    "Jordan Rivera: So if AI search takes two squads and SSO takes one engineer, mobile doesn't fit before the end of the year. Is everyone comfortable pushing the mobile beta to January?",
+    "Sofia Alvarez: I'm okay with that if we keep one designer on it so we don't lose momentum. We can use the time to run usability tests on the prototype.",
+    "Hannah Kim: I'd rather tell the waitlist a firm January date than a vague Q4. I'll update the waitlist email once we confirm.",
+    "Jordan Rivera: Agreed. Decision: mobile beta moves to January, design continues in the background. Now let's talk about the AI search scope, because that's where the risk is.",
+    "Marcus Chen: The core idea is semantic search over transcripts. We embed every transcript chunk, store vectors next to the meeting, and let people ask natural questions like what did the customer say about pricing.",
+    "Priya Sharma: The cost question is important. Embedding the back catalog for every workspace is expensive. I'd suggest we only index the last twelve months at launch.",
+    "Marcus Chen: That works. Twelve months covers more than ninety percent of searches in our logs anyway.",
+    "Sofia Alvarez: On the UI, I want search results to jump straight to the timestamp in the player, not just open the meeting. That's the moment of magic for users.",
+    "Jordan Rivera: Love that. Sofia, can you have the search mockups ready by next Wednesday so engineering can start estimating?",
+    "Sofia Alvarez: Yes, I'll have them by Wednesday, including the empty and error states.",
+    "Jordan Rivera: What launch date are we comfortable with?",
+    "Priya Sharma: If design lands next week and we start the indexing pipeline now, I'm comfortable with November eighteenth, with a beta for internal users on November fourth.",
+    "Hannah Kim: November eighteenth works perfectly for the campaign. I'll draft the launch messaging and a blog outline and share them by end of next week.",
+    "Marcus Chen: For SSO, I'll take the technical spike this sprint so sales has a real date for Northwind and Globex. I'll start with Okta and Azure AD since those cover both deals.",
+    "Jordan Rivera: Perfect. Priya, can you put together the detailed capacity plan by Friday, including who is on which squad?",
+    "Priya Sharma: Will do. I'll also flag any hiring we need, because we're one backend engineer short for the indexing work.",
+    "Jordan Rivera: Good callout, let's raise it with Nina so the open backend role gets prioritized. To recap: AI search is the headline for Q4 and launches November eighteenth, SSO ships in Q4 for the two enterprise deals, and the mobile beta moves to January.",
+    "Jordan Rivera: I'll write this up in the roadmap doc and share it with the leadership team tomorrow morning. Thanks everyone, great session."
+  ]
+}

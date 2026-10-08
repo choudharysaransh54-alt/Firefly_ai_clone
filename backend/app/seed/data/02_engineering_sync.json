@@ -1,0 +1,64 @@
+{
+  "title": "Weekly Engineering Sync",
+  "days_ago": 1,
+  "time": "09:30",
+  "source": "zoom",
+  "tags": ["Engineering", "Standup"],
+  "participants": [
+    {"name": "Priya Sharma", "email": "priya@acme.io"},
+    {"name": "Marcus Chen", "email": "marcus@acme.io"},
+    {"name": "Ravi Patel", "email": "ravi@acme.io"},
+    {"name": "Aisha Bello", "email": "aisha@acme.io"}
+  ],
+  "overview": [
+    "The SSO login flow is built, but testing is blocked on an Okta sandbox tenant; Priya will get it approved today.",
+    "Transcript virtualization shipped: a 3-hour meeting now loads in under half a second instead of about 4 seconds.",
+    "A click-to-seek timestamp drift bug (milliseconds vs seconds rounding) will be fixed before Thursday's release.",
+    "Code freeze is Wednesday at noon; the release includes virtualization, the timestamp fix and player keyboard shortcuts.",
+    "On-call passes from Marcus to Aisha; the export service needs a proper streaming solution for large PDFs."
+  ],
+  "keywords": ["SSO", "Okta", "Virtualization", "Release", "Flaky tests", "On-call"],
+  "chapters": [
+    {"line": 1, "title": "SSO progress & Okta sandbox", "summary": "SAML parsing and the login redirect are done; testing is blocked on an Okta sandbox tenant waiting for approval."},
+    {"line": 7, "title": "Transcript performance", "summary": "Virtualization cut a 3-hour meeting's load time from about 4s to under 0.5s; a timestamp drift bug was found."},
+    {"line": 12, "title": "QA & flaky tests", "summary": "Two calendar-sync tests fail on a daylight saving time edge case; the test clock will be pinned."},
+    {"line": 15, "title": "Thursday release plan", "summary": "Virtualization, the timestamp fix and player keyboard shortcuts ship Thursday, with a code freeze Wednesday noon."},
+    {"line": 20, "title": "On-call handover", "summary": "The export service ran out of memory on a large PDF; a streaming export ticket goes into next sprint."}
+  ],
+  "action_items": [
+    {"line": 4, "text": "Request the Okta sandbox tenant from IT and approve it", "assignee": "Priya Sharma", "done": true},
+    {"line": 5, "text": "Write a backwards-compatible migration for the sessions table", "assignee": "Marcus Chen"},
+    {"line": 11, "text": "Fix the transcript timestamp drift before Thursday's release", "assignee": "Ravi Patel"},
+    {"line": 14, "text": "Pin the calendar-sync test clock to fix the flaky DST tests", "assignee": "Aisha Bello"},
+    {"line": 18, "text": "Update the release notes for Thursday", "assignee": "Ravi Patel"},
+    {"line": 22, "text": "Create a ticket for streaming PDF exports", "assignee": "Priya Sharma"}
+  ],
+  "comments": [
+    {"line": 9, "body": "This is the bug customers reported in support ticket #4821."}
+  ],
+  "transcript": [
+    "Priya Sharma: Morning all. Let's keep this to fifteen minutes. Quick round of updates, then blockers, then the release plan for Thursday. Marcus, want to start?",
+    "Marcus Chen: Sure. I finished the SAML assertion parsing and the login redirect flow. The part I'm stuck on is testing. We still don't have an Okta sandbox tenant, so I'm testing against a mock identity provider.",
+    "Priya Sharma: How long have you been waiting on the sandbox?",
+    "Marcus Chen: About a week. IT said it needs a manager's approval because it's a paid tenant.",
+    "Priya Sharma: Okay, that's on me. I'll request the Okta sandbox from IT today and approve it myself.",
+    "Marcus Chen: Thanks. The other thing is the sessions table. We need a migration to store the identity provider on each session, and I want to write it so it's backwards compatible with the old login.",
+    "Priya Sharma: Makes sense. Write the migration this week and let's review it together before it goes anywhere near production.",
+    "Ravi Patel: My turn. I shipped the transcript virtualization, so long meetings now render only the visible lines. A three hour meeting went from about four seconds to load to under half a second.",
+    "Aisha Bello: I can confirm that, it's a huge difference. I tested it on the biggest customer meeting we have and scrolling is smooth now.",
+    "Ravi Patel: There's one bug I found though. When you click a transcript line, the player sometimes jumps one or two seconds before the actual timestamp. It looks like a rounding issue between milliseconds and seconds.",
+    "Priya Sharma: Is that a regression from the virtualization work?",
+    "Ravi Patel: I don't think so, I see it on the old version too. But it's more noticeable now because the active line highlight is more precise. I'll fix the timestamp drift before Thursday's release.",
+    "Aisha Bello: From QA, the regression suite is green except for two flaky tests in the calendar sync. They fail maybe once in ten runs, always on a timezone edge case.",
+    "Marcus Chen: That's probably daylight saving time. The test creates a meeting at two AM on the day the clocks change.",
+    "Aisha Bello: That would explain it. I'll pin the test clock to a fixed date and see if the flakiness goes away.",
+    "Priya Sharma: Good. Now the release on Thursday. What's going in?",
+    "Ravi Patel: Transcript virtualization, the timestamp fix if it's ready, and the new keyboard shortcuts for the player. Space to play and pause, and the arrow keys to skip five seconds.",
+    "Aisha Bello: I'd like a code freeze on Wednesday at noon so I have a full afternoon for the regression pass.",
+    "Priya Sharma: Agreed, code freeze Wednesday noon. Ravi, please also update the release notes, since most of the changes are yours.",
+    "Ravi Patel: Sure, I'll update the release notes tomorrow.",
+    "Priya Sharma: Last thing, on-call. Marcus is handing over to Aisha this week. Anything she should know?",
+    "Marcus Chen: Only one incident this week. The export service ran out of memory on a very large PDF export. I added a page limit as a quick fix, but we need a proper streaming solution.",
+    "Priya Sharma: Let's create a ticket for the streaming export and pick it up next sprint. Thanks everyone, see you Thursday."
+  ]
+}

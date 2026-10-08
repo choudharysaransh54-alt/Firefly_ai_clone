@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:09,000
+Rachel Green: Thanks for joining, Ahmed. I'd love to hear how the first month with our analytics dashboard has gone.
+
+2
+00:00:09,500 --> 00:00:22,000
+Ahmed Khan: Overall it's been great. The weekly reports save my team a lot of time, but the export to Excel keeps timing out for large date ranges.
+
+3
+00:00:22,500 --> 00:00:31,000
+Rachel Green: Thanks for flagging that. Roughly how large are the exports when they fail?
+
+4
+00:00:31,500 --> 00:00:40,000
+Ahmed Khan: Anything above six months of data. Smaller exports work fine.
+
+5
+00:00:40,500 --> 00:00:52,000
+Rachel Green: Understood. I'll open a ticket with engineering today and follow up with a workaround by Wednesday.
+
+6
+00:00:52,500 --> 00:01:05,000
+Ahmed Khan: That would help. We're also interested in adding ten more seats for the finance team next quarter.
+
+7
+00:01:05,500 --> 00:01:15,000
+Rachel Green: Great to hear. I'll send you a quote for ten additional seats with our annual discount.
+
+8
+00:01:15,500 --> 00:01:22,000
+Ahmed Khan: Perfect, please send it to me and our procurement lead.

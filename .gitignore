@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Local SQLite database (recreated and seeded automatically on startup)
+backend/*.db
+
+# Environment files (keep the examples)
+.env
+.env.local
+!.env.example
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+node_modules/
+.next/
+scratch/

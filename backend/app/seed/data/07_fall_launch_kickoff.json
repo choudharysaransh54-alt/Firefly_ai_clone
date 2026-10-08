@@ -1,0 +1,60 @@
+{
+  "title": "Fall Launch Marketing Kickoff",
+  "days_ago": 13,
+  "time": "14:00",
+  "source": "zoom",
+  "tags": ["Marketing", "Launch"],
+  "participants": [
+    {"name": "Hannah Kim", "email": "hannah@acme.io"},
+    {"name": "Jordan Rivera", "email": "jordan@acme.io"},
+    {"name": "Daniel Okafor", "email": "daniel@acme.io"},
+    {"name": "Sofia Alvarez", "email": "sofia@acme.io"},
+    {"name": "Leo Martins", "email": "leo@acme.io"}
+  ],
+  "overview": [
+    "The fall launch will center on AI search, targeting mid-November once the roadmap confirms the date.",
+    "Core message: 'Find any moment in any meeting', backed by the 5-hours-a-week time saving proof point.",
+    "The primary persona is sales leaders; support managers are a fast-growing secondary audience (e.g. Globex).",
+    "Channels: a launch webinar, a three-part blog series, Product Hunt and paid LinkedIn, with a $40k budget.",
+    "Goal: 3,000 signups and 200 qualified leads in 30 days; paid ads stay date-free until the launch is locked."
+  ],
+  "keywords": ["Launch", "Messaging", "Webinar", "Product Hunt", "Budget", "Leads"],
+  "chapters": [
+    {"line": 0, "title": "Launch goals & timing", "summary": "The fall launch is planned around mid-November, with AI search as the likely headline."},
+    {"line": 2, "title": "Core message", "summary": "'Find any moment in any meeting', backed by a hard number: reps save 5 hours a week."},
+    {"line": 5, "title": "Audiences & customer story", "summary": "Sales leaders first and support managers second; pursue a Globex case study."},
+    {"line": 10, "title": "Channels & budget", "summary": "Webinar, blog series, Product Hunt and paid LinkedIn with a $40k quarterly budget."},
+    {"line": 14, "title": "Goals & risks", "summary": "3,000 signups and 200 qualified leads in 30 days; keep paid ads free of hard dates."}
+  ],
+  "action_items": [
+    {"line": 9, "text": "Ask Globex about a case study and customer video", "assignee": "Daniel Okafor", "done": true},
+    {"line": 11, "text": "Design the Product Hunt demo GIF and screenshots", "assignee": "Sofia Alvarez"},
+    {"line": 20, "text": "Draft the messaging framework and the first blog post", "assignee": "Leo Martins"},
+    {"line": 21, "text": "Book the webinar platform and draft the campaign timeline", "assignee": "Hannah Kim"},
+    {"line": 17, "text": "Set up lead routing for webinar sign-ups", "assignee": "Hannah Kim"}
+  ],
+  "transcript": [
+    "Hannah Kim: Welcome to the fall launch kickoff. The goal is to align on the story, the audience, the channels and the budget. Product is still confirming the exact date, but we're planning around mid November.",
+    "Jordan Rivera: Right, the headline feature will most likely be AI search. We'll confirm in the roadmap meeting, but you can plan around it.",
+    "Hannah Kim: Great. Let's start with the story. Leo and I have been working on the core message, find any moment in any meeting.",
+    "Leo Martins: The idea is that people already record everything, but meetings are a black box afterwards. AI search turns your meeting history into something you can actually ask questions about.",
+    "Daniel Okafor: I like it. From the sales side, the strongest proof point is time saved. Prospects respond to numbers, like reps saving five hours a week.",
+    "Hannah Kim: Agreed, we'll build the campaign on one emotional message and one hard number. Now audiences. Our primary persona is sales leaders, and the secondary is customer success and support managers.",
+    "Daniel Okafor: Support managers are an underrated audience. Globex's support team is our fastest growing account.",
+    "Leo Martins: Then let's do a customer story with Globex. If they agree, a short video would be ideal.",
+    "Hannah Kim: Good idea. Daniel, can you ask Globex whether they'd be open to a case study?",
+    "Daniel Okafor: Sure, I'll ask Grace at our next touchpoint. Their QBR is coming up soon.",
+    "Hannah Kim: Now channels. I'm proposing four, a launch webinar, a blog series, a Product Hunt launch, and a paid LinkedIn campaign aimed at sales leaders.",
+    "Sofia Alvarez: For Product Hunt, we'll need a strong demo GIF and five or six screenshots. I can design those once the search UI is final.",
+    "Leo Martins: I'll own the blog series. Three posts, the problem with meeting notes, how AI search works, and a customer story.",
+    "Hannah Kim: Budget. We have forty thousand dollars for the quarter. I'm suggesting twenty five thousand for paid LinkedIn, ten thousand for the webinar and video production, and five thousand as a buffer.",
+    "Jordan Rivera: That seems reasonable. What's the goal for the campaign?",
+    "Hannah Kim: Three thousand new signups in the first thirty days, and two hundred qualified sales leads.",
+    "Daniel Okafor: Two hundred leads is ambitious, but doable if the webinar lands well. We should have sales reps follow up within twenty four hours of the webinar.",
+    "Hannah Kim: Agreed. Let's set up a lead routing rule so webinar sign ups go straight to the right rep.",
+    "Jordan Rivera: One risk to flag. If the AI search launch slips by a week or two, the campaign needs to be flexible. Can we avoid hard dates in paid ads until the launch date is locked?",
+    "Hannah Kim: Yes, we'll keep the ads date free and only announce the date in owned channels.",
+    "Leo Martins: I'll draft the messaging framework and the first blog post by next Thursday.",
+    "Hannah Kim: And I'll book the webinar platform and draft the campaign timeline. Let's meet again in two weeks to review everything."
+  ]
+}

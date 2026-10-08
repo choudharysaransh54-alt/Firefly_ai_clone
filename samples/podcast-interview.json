@@ -1,0 +1,18 @@
+{
+  "title": "Async Work Podcast, Episode 42",
+  "note": "Uses the alternative JSON keys speaker_name / start_time / end_time with mm:ss strings.",
+  "segments": [
+    {"speaker_name": "Nadia Brooks", "start_time": "00:00", "end_time": "00:14", "text": "Welcome back to the Async Work podcast. Today I'm joined by Dr. Ian Mercer, who studies how remote teams make decisions."},
+    {"speaker_name": "Ian Mercer", "start_time": "00:15", "end_time": "00:21", "text": "Thanks for having me, Nadia. It's a topic I could talk about all day."},
+    {"speaker_name": "Nadia Brooks", "start_time": "00:22", "end_time": "00:36", "text": "Let's start with the big question. Why do remote teams end up with so many meetings, when remote work was supposed to give us more focus time?"},
+    {"speaker_name": "Ian Mercer", "start_time": "00:37", "end_time": "01:12", "text": "In our research, the main reason is uncertainty. When people can't see each other, they schedule a meeting to make sure everyone is aligned. A meeting feels safer than a written proposal, even when a document would be faster."},
+    {"speaker_name": "Nadia Brooks", "start_time": "01:13", "end_time": "01:24", "text": "So what do the best teams do differently?"},
+    {"speaker_name": "Ian Mercer", "start_time": "01:25", "end_time": "02:10", "text": "They separate discussion from decision. Discussion happens in writing over a day or two, and the meeting is only used to make the final call. Those teams had forty percent fewer meetings and made decisions faster."},
+    {"speaker_name": "Nadia Brooks", "start_time": "02:11", "end_time": "02:28", "text": "What about recording meetings and generating summaries with AI? Does that help, or does it just create more content nobody reads?"},
+    {"speaker_name": "Ian Mercer", "start_time": "02:29", "end_time": "03:15", "text": "It helps when the summary is short and the action items are clear. People who miss a meeting can catch up in two minutes instead of watching an hour of video. The key is that someone owns each action item."},
+    {"speaker_name": "Nadia Brooks", "start_time": "03:16", "end_time": "03:30", "text": "If a listener wants to try one thing this week, what should it be?"},
+    {"speaker_name": "Ian Mercer", "start_time": "03:31", "end_time": "04:05", "text": "Pick your most frequent recurring meeting and cancel it for two weeks. Replace it with a written update and see what breaks. Usually nothing does."},
+    {"speaker_name": "Nadia Brooks", "start_time": "04:06", "end_time": "04:24", "text": "Great advice. I'll put a link to your research paper in the show notes. Listeners, please send us your questions about async work by Friday for our next episode."},
+    {"speaker_name": "Ian Mercer", "start_time": "04:25", "end_time": "04:31", "text": "Thanks Nadia, this was fun."}
+  ]
+}

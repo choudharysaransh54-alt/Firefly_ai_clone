@@ -1,0 +1,4 @@
+﻿[00:00] Dana White: This file was saved on Windows, so every line ends with CRLF.
+[00:06] Eli Brown: It also starts with a UTF-8 byte order mark, like files saved in Notepad.
+[00:13] Dana White: Both should be handled without any extra speakers or broken text.
+[00:19] Eli Brown: I'll double check the export settings on my side.

@@ -1,0 +1,9 @@
+[
+  {"speaker": "Liam Turner", "start": "00:00", "text": "Morning team, quick standup. Let's go around."},
+  {"speaker": "Zoe Martin", "start": "00:05", "text": "Yesterday I finished the search API pagination. Today I'm writing the integration tests."},
+  {"speaker": "Kenji Sato", "start": "00:16", "text": "I'm still debugging the flaky login test. I think it's a race condition in the session refresh."},
+  {"speaker": "Liam Turner", "start": "00:27", "text": "Kenji, can you pair with Zoe on that after lunch? She fixed something similar last month."},
+  {"speaker": "Zoe Martin", "start": "00:36", "text": "Sure, I'll ping you after lunch Kenji."},
+  {"speaker": "Kenji Sato", "start": "00:41", "text": "Thanks. I'll also update the runbook once we find the root cause."},
+  {"speaker": "Liam Turner", "start": "00:49", "text": "Great. Reminder that the release branch is cut on Thursday, so we need to merge everything by Wednesday evening."}
+]

@@ -1,0 +1,15 @@
+[
+  {"speaker": "Fatima Noor", "start": 0, "end": 11.5, "text": "Thanks for jumping on so quickly, Greg. I know the sync outage has been painful for your clinics this morning."},
+  {"speaker": "Greg Holt", "start": 12, "end": 29, "text": "It has. Since about seven AM, appointment notes from three of our clinics aren't syncing to the patient portal. Our front desk staff are copying them by hand."},
+  {"speaker": "Fatima Noor", "start": 29.5, "end": 36, "text": "I've got Sam from our on-call engineering team here. Sam, what have you found so far?"},
+  {"speaker": "Sam Rivera", "start": 36.5, "end": 58, "text": "We traced it to an expired API token for your portal integration. The token rotated overnight, and our retry logic didn't pick up the new one. Notes are queued, nothing is lost."},
+  {"speaker": "Greg Holt", "start": 58.5, "end": 66, "text": "That's a relief. How long until the queued notes go through?"},
+  {"speaker": "Sam Rivera", "start": 66.5, "end": 84, "text": "I've already deployed a fix to refresh the token. The backlog of about four thousand notes should finish syncing within the next thirty minutes. I'll monitor it until the queue is empty."},
+  {"speaker": "Fatima Noor", "start": 84.5, "end": 97, "text": "Greg, could you ask one of the clinics to confirm that new notes are showing up in the portal in about fifteen minutes?"},
+  {"speaker": "Greg Holt", "start": 97.5, "end": 104, "text": "Yes, I'll ask the downtown clinic to check and let you know."},
+  {"speaker": "Greg Holt", "start": 104.5, "end": 120, "text": "I do need to understand how this happened, though. Our compliance team will ask for an incident report, and we need to know it won't happen again."},
+  {"speaker": "Fatima Noor", "start": 120.5, "end": 134, "text": "Absolutely. I'll send you a written incident report with the root cause and timeline by end of day tomorrow."},
+  {"speaker": "Sam Rivera", "start": 134.5, "end": 152, "text": "On our side, we need to add an alert for token expiry and a test for the rotation path. I'll open tickets for both today so they ship in this sprint."},
+  {"speaker": "Greg Holt", "start": 152.5, "end": 160, "text": "Thank you. Please also keep me posted when the backlog is fully cleared."},
+  {"speaker": "Fatima Noor", "start": 160.5, "end": 168, "text": "Will do. I'll message you as soon as Sam confirms the queue is empty."}
+]

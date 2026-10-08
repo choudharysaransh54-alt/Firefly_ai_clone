@@ -1,0 +1,60 @@
+{
+  "title": "Hiring Debrief: Senior Backend Engineer",
+  "days_ago": 9,
+  "time": "16:00",
+  "source": "google_meet",
+  "tags": ["Hiring"],
+  "participants": [
+    {"name": "Nina Torres", "email": "nina@acme.io"},
+    {"name": "Priya Sharma", "email": "priya@acme.io"},
+    {"name": "Marcus Chen", "email": "marcus@acme.io"},
+    {"name": "Jordan Rivera", "email": "jordan@acme.io"}
+  ],
+  "overview": [
+    "The panel unanimously recommends hiring Sam Whitaker for the senior backend role.",
+    "System design was exceptionally strong, and the coding interview was clean and test-first.",
+    "The main gap is async Python experience; it is considered learnable and Marcus will pair with Sam.",
+    "References highlight ownership and mentoring, which helps with the junior engineers joining in January.",
+    "The offer will be near the top of the senior band, moving fast because of a competing offer due next Friday."
+  ],
+  "keywords": ["Hiring", "System design", "Async Python", "Offer", "References", "Mentoring"],
+  "chapters": [
+    {"line": 0, "title": "Logistics & timeline", "summary": "Scorecards are in, and Sam has a competing offer with a deadline next Friday."},
+    {"line": 2, "title": "System design & coding", "summary": "Excellent system design (a sharded transcript search service) and clean, test-first coding."},
+    {"line": 5, "title": "Concern: async Python", "summary": "Async Python knowledge was shallow, but the team sees it as a learnable gap rather than a blocker."},
+    {"line": 8, "title": "Values & references", "summary": "Customer-focused, with strong ownership and mentoring according to references."},
+    {"line": 12, "title": "Decision, level & offer", "summary": "Unanimous hire at the senior level, with an offer near the top of the band."}
+  ],
+  "action_items": [
+    {"line": 20, "text": "Prepare Sam's offer near the top of the senior band and get approvals by Monday", "assignee": "Nina Torres"},
+    {"line": 20, "text": "Collect Sam's final reference", "assignee": "Nina Torres", "done": true},
+    {"line": 21, "text": "Call Sam after the offer goes out to discuss the team and the indexing project", "assignee": "Priya Sharma"},
+    {"line": 22, "text": "Create an onboarding plan with an async Python primer and a starter project", "assignee": "Marcus Chen"}
+  ],
+  "transcript": [
+    "Nina Torres: Thanks for joining the debrief for Sam Whitaker, our candidate for the senior backend role. Everyone has submitted scorecards, so let's go through each interview and then make a decision.",
+    "Nina Torres: Quick logistics first. Sam has another offer with a deadline next Friday, so if we want to move forward, we need to be quick.",
+    "Priya Sharma: Good to know. I did the system design interview. I asked Sam to design a transcript search service for millions of meetings. It was one of the strongest sessions I've seen this year.",
+    "Priya Sharma: Sam started with the requirements, asked about latency and cost, and proposed sharding the index by workspace. They also brought up embedding costs without me prompting.",
+    "Marcus Chen: That matches my coding interview. The solution was clean and well tested. Sam wrote tests before the implementation and talked through edge cases clearly.",
+    "Marcus Chen: My one concern is async Python. Sam's background is mostly Java and Go, and when I asked about the event loop and blocking calls in async code, the answers were a bit shallow.",
+    "Priya Sharma: How important is that for the role? Most of our services are synchronous FastAPI today.",
+    "Marcus Chen: Fair point. It matters for the new indexing pipeline, but it's learnable. I'd rate it as a gap, not a blocker.",
+    "Jordan Rivera: I did the product and values interview. Sam asked great questions about our customers and how engineers talk to them. They clearly care about the user, not just the technology.",
+    "Jordan Rivera: One example, Sam described a project where they pushed back on a feature request, dug into the real problem with the customer, and shipped something simpler that solved it.",
+    "Nina Torres: The references I've collected so far are very positive. Both former managers mentioned strong ownership and good mentoring of junior engineers.",
+    "Priya Sharma: Mentoring is a big plus. We have two junior engineers joining in January who will need support.",
+    "Nina Torres: So, overall recommendations. Priya?",
+    "Priya Sharma: Strong hire. I'd want Sam on the indexing squad for AI search.",
+    "Marcus Chen: Hire. The async gap is real, but I'm happy to pair with Sam for the first few weeks.",
+    "Jordan Rivera: Strong hire from me as well.",
+    "Nina Torres: Great, that's a clear yes. Let's talk about level. The role was posted as senior. Does everyone agree on that level?",
+    "Priya Sharma: Yes, senior. The system design was at the staff level, but we haven't seen enough leadership scope to go higher.",
+    "Nina Torres: Okay. Sam's expectations are at the top of our senior band. Given the competing offer, I'd suggest we offer near the top of the band with a standard equity grant.",
+    "Jordan Rivera: I'm fine with that. Losing a candidate this strong over a small difference would be a mistake.",
+    "Nina Torres: Then I'll prepare the offer today and get approvals by Monday. I'll also collect the final reference.",
+    "Priya Sharma: I'll call Sam after the offer goes out to talk about the team and the indexing project. Candidates usually appreciate hearing from the hiring manager.",
+    "Marcus Chen: And I'll put together an onboarding plan with an async Python primer and a starter project.",
+    "Nina Torres: Perfect. Thanks everyone, I'll keep you posted on Sam's response."
+  ]
+}

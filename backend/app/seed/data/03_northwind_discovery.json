@@ -1,0 +1,72 @@
+{
+  "title": "Discovery Call — Northwind Traders",
+  "days_ago": 2,
+  "time": "15:00",
+  "source": "zoom",
+  "tags": ["Sales", "Customer"],
+  "participants": [
+    {"name": "Daniel Okafor", "email": "daniel@acme.io"},
+    {"name": "Jordan Rivera", "email": "jordan@acme.io"},
+    {"name": "Laura Bennett", "email": "laura.bennett@northwind.example"},
+    {"name": "Tom Fischer", "email": "tom.fischer@northwind.example"}
+  ],
+  "overview": [
+    "Northwind's 120 sales reps log call notes inconsistently, so pipeline reviews rely on gut feeling.",
+    "Reps spend about 5 hours a week on notes and CRM updates, roughly 600 hours across the team.",
+    "They evaluated Gong last year but found it too expensive and too heavy for reps.",
+    "Requirements: Salesforce integration, EU data residency, SOC 2 Type II, a signed DPA and Okta SSO.",
+    "Next step is a 30-day pilot with 20 reps; budget is approved for Q1 and the CRO makes the final call."
+  ],
+  "keywords": ["Salesforce", "Pilot", "Pricing", "Data residency", "SOC 2", "SSO"],
+  "chapters": [
+    {"line": 2, "title": "Current note-taking process", "summary": "120 reps log notes inconsistently in Salesforce, so pipeline reviews are based on gut feeling."},
+    {"line": 5, "title": "Time cost & alternatives", "summary": "Reps spend about 5 hours a week on notes (600 hours team-wide); Gong was too expensive and too heavy."},
+    {"line": 12, "title": "Security, data residency & SSO", "summary": "EU data residency in Frankfurt, SOC 2 Type II, a DPA and Okta SSO are requirements from IT."},
+    {"line": 19, "title": "Budget & decision process", "summary": "Budget is approved for Q1 on the Business plan; the CRO decides after a pilot."},
+    {"line": 22, "title": "Pilot plan & next steps", "summary": "A 30-day pilot with 20 reps. Success means 90% of calls logged and at least 2 hours saved per rep each week."}
+  ],
+  "action_items": [
+    {"line": 15, "text": "Send the security package and completed security questionnaire", "assignee": "Daniel Okafor", "done": true},
+    {"line": 20, "text": "Prepare a Business plan proposal with volume pricing for 120 seats", "assignee": "Daniel Okafor"},
+    {"line": 24, "text": "Set up the 20-rep pilot and send a mutual action plan", "assignee": "Daniel Okafor"},
+    {"line": 26, "text": "Join the technical call with Tom to review Salesforce permissions and SSO", "assignee": "Jordan Rivera"},
+    {"line": 28, "text": "Select the 20 pilot reps across the three regions", "assignee": "Laura Bennett"},
+    {"line": 29, "text": "Review the security documents and DPA", "assignee": "Tom Fischer"}
+  ],
+  "comments": [
+    {"line": 23, "body": "These success criteria are great. Let's copy them into the mutual action plan word for word."}
+  ],
+  "transcript": [
+    "Daniel Okafor: Hi Laura, hi Tom, thanks for making the time. I've got Jordan from our product team with me today. The plan is to understand how your sales team works today, then show you a few things, and agree on next steps if it makes sense.",
+    "Laura Bennett: Sounds good. Just for context, I run sales operations at Northwind. Tom leads IT and he'll have the security questions.",
+    "Daniel Okafor: Perfect. So to start, can you walk us through how your reps handle call notes today?",
+    "Laura Bennett: Honestly, it's inconsistent. We have about a hundred and twenty reps across three regions. Some take great notes, most type a couple of lines into Salesforce after the call, and some don't log anything at all.",
+    "Laura Bennett: The result is that our pipeline reviews are based on gut feeling. When a deal slips, nobody can tell me what the customer actually said about budget or timing.",
+    "Jordan Rivera: That's a really common pattern. How much time do you think reps spend on notes and CRM updates per week?",
+    "Laura Bennett: We surveyed them last quarter. The average was about five hours a week. For a team of a hundred and twenty, that's a lot of selling time.",
+    "Daniel Okafor: That's six hundred hours a week across the team. If we could give back even half of that, it pays for itself many times over.",
+    "Laura Bennett: That's the business case I need to make to our CFO, so I like that framing.",
+    "Daniel Okafor: Have you looked at other tools?",
+    "Laura Bennett: We evaluated Gong last year. It's powerful, but it was too expensive for the full team, and the reps found it heavy. We need something they'll actually use without training.",
+    "Jordan Rivera: That's exactly where we focus. Notes are generated automatically and pushed to Salesforce, so the rep doesn't have to change their workflow. They just review the summary and the action items.",
+    "Tom Fischer: Can I jump in with the IT side? The Salesforce integration is a must have, but I need to understand how data flows. Where are recordings stored, and do you support data residency in the EU? About forty of our reps are in Germany.",
+    "Jordan Rivera: Recordings and transcripts are encrypted at rest. We have an EU data region in Frankfurt, and workspaces can be pinned to it so data never leaves the EU.",
+    "Tom Fischer: Good. What about compliance? We'll need SOC 2 Type Two and a signed DPA.",
+    "Daniel Okafor: We have SOC 2 Type Two, renewed in August, and a standard DPA. I'll send the security package over today, including our completed security questionnaire.",
+    "Tom Fischer: And single sign-on? We use Okta for everything.",
+    "Jordan Rivera: SAML single sign-on with Okta is shipping this quarter. In fact, your requirement is one of the reasons we prioritized it.",
+    "Tom Fischer: Okay. If SSO isn't live, a pilot is still fine, but the full rollout would depend on it.",
+    "Laura Bennett: Let's talk about budget and timing. We have budget approved for a tool like this starting in Q1. What would pricing look like for a hundred and twenty seats?",
+    "Daniel Okafor: For your size, the Business plan makes the most sense. It includes the Salesforce integration, unlimited transcription, and the EU data region. I'll put together a proposal with volume pricing for a hundred and twenty seats.",
+    "Laura Bennett: Great. On the decision process, I'm the business owner, Tom signs off on security, and our CRO has the final say. She'll want to see results from a pilot first.",
+    "Jordan Rivera: What would a successful pilot look like for you?",
+    "Laura Bennett: Twenty reps for thirty days. If we see CRM notes logged for at least ninety percent of calls, and reps tell us they save at least two hours a week, that's a win.",
+    "Daniel Okafor: Those are clear criteria. Let's set up the pilot for twenty reps starting the first week of next month. I'll send a mutual action plan with the dates.",
+    "Tom Fischer: Before the pilot starts I'll need a technical call with your team to review the Salesforce permissions and the SSO setup.",
+    "Daniel Okafor: Of course. Jordan, could you join that technical call with Tom next week, along with one of our engineers?",
+    "Jordan Rivera: Yes, I'll bring Marcus, he's leading the SSO work.",
+    "Laura Bennett: Perfect. Then I'll pick the twenty pilot reps, a mix of new and senior people across the three regions.",
+    "Daniel Okafor: Great. To recap, I'll send the security package and the proposal, set up the pilot for twenty reps, and schedule the technical call. Laura picks the pilot group, and Tom reviews the security documents.",
+    "Laura Bennett: That works. Thanks both, this was really helpful."
+  ]
+}

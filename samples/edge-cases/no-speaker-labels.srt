@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:05,000
+Welcome to the quarterly planning session.
+
+2
+00:00:05,500 --> 00:00:11,000
+Our first topic is the hiring plan for next year.
+
+3
+00:00:11,500 --> 00:00:18,000
+We need to finalize the budget by the end of the month.
+
+4
+00:00:18,500 --> 00:00:23,000
+Let's review the numbers again next week.

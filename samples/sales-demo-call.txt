@@ -1,0 +1,26 @@
+[00:00:04] Carlos Mendes: Hi Victoria, hi Omar, thanks for making time today. I'm Carlos, I'll be your account executive, and Hannah here is our solutions engineer.
+[00:00:15] Victoria Shaw: Great to meet you both. I lead revenue operations at Brightline, and Omar runs our IT and security team.
+[00:00:24] Carlos Mendes: Perfect. Last time you mentioned your reps spend a lot of time writing call notes. Can you remind us what the biggest pain is right now?
+[00:00:38] Victoria Shaw: Honestly it's visibility. We have sixty account managers, and when a renewal is at risk I usually find out too late. The notes in our CRM are thin or missing.
+[00:01:02] Omar Haddad: And from my side, any new tool has to pass our vendor security review. Last quarter we rejected two tools because they couldn't do single sign-on.
+[00:01:18] Carlos Mendes: Understood. Hannah, do you want to show them the meeting workspace first?
+[00:01:24] Hannah Lee: Sure. I'm sharing my screen now. This is a renewal call one of our customers recorded yesterday. On the left you have the AI summary, and on the right the full transcript with speaker labels.
+[00:02:05] Victoria Shaw: So I could click on this action item and jump to the moment it was said?
+[00:02:11] Hannah Lee: Exactly. Every action item and every outline section is linked to a timestamp, so you can verify it in two seconds instead of re-watching the whole call.
+[00:02:40] Victoria Shaw: That's really useful for our weekly pipeline review. Can it flag when a customer mentions a competitor?
+[00:02:52] Hannah Lee: Yes, you can set up topic trackers for competitor names, pricing objections, or words like cancel and churn. They show up across all meetings in the analytics view.
+[00:04:30] Omar Haddad: Let me ask the boring questions. Where is the data stored, and do you support SAML single sign-on with Azure AD?
+[00:04:44] Hannah Lee: Data is stored in the US by default with an EU region available, encrypted at rest and in transit. SAML with Azure AD and Okta is supported on the Business plan.
+[00:05:10] Omar Haddad: Good. I'll need your SOC 2 report and a completed security questionnaire before we can move forward.
+[00:05:18] Carlos Mendes: No problem. I'll send the SOC 2 report and our standard questionnaire answers by Thursday.
+[00:07:55] Victoria Shaw: What about our CRM? We're on HubSpot, not Salesforce.
+[00:08:03] Hannah Lee: We integrate with HubSpot natively. The summary and action items are logged on the deal and the contact automatically after each call.
+[00:09:40] Victoria Shaw: Okay, that covers the main workflow. Let's talk about pricing, because I need to bring a number to our CFO.
+[00:09:52] Carlos Mendes: For sixty seats on the Business plan with annual billing, you'd be at the volume tier. I'll put together a formal quote with the discount for a two year commitment.
+[00:10:20] Victoria Shaw: Please include an option for a smaller pilot first. I'd like to start with fifteen account managers for a month.
+[00:10:31] Carlos Mendes: That works. We can run a thirty day pilot with fifteen seats and convert it to the full contract if you hit your goals.
+[00:14:02] Omar Haddad: Hannah, could you set up a sandbox workspace so my team can test the SSO configuration next week?
+[00:14:10] Hannah Lee: Yes, I'll create the sandbox tomorrow and send you the setup guide for Azure AD.
+[00:17:45] Victoria Shaw: Great. On our side, I'll pick the fifteen pilot users and share the list with you by Monday.
+[00:18:01] Carlos Mendes: Perfect. To recap, I'll send the SOC 2 report and the quote, Hannah sets up the sandbox, and Victoria picks the pilot group. Let's meet again next Wednesday to kick off the pilot.
+[00:18:30] Victoria Shaw: Sounds good. Thanks both, this was really helpful.

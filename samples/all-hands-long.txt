@@ -1,0 +1,73 @@
+[00:00:05] Laura Chen: Good morning everyone, and welcome to the October all-hands. We have a packed agenda today, so let's jump right in.
+[00:00:20] Laura Chen: Here's the plan. I'll cover company performance, Mark will walk through the product and engineering roadmap, Sophie has the sales update, Ahmed will cover people and culture, and we'll save the last twenty minutes for your questions.
+[00:01:05] Laura Chen: Let's start with the numbers. We finished the third quarter at six point eight million in annual recurring revenue, which is thirty one percent growth year over year.
+[00:01:50] Laura Chen: Gross retention is ninety four percent and net retention is one hundred and fourteen percent. That means our existing customers are growing with us, which is the healthiest signal a business like ours can have.
+[00:02:45] Laura Chen: We also crossed two thousand paying customers last month. A big thank you to the support and success teams, because customer satisfaction stayed above ninety percent while volume doubled.
+[00:03:40] Laura Chen: Now, not everything went to plan. We missed our new enterprise logo target by about fifteen percent, mostly because security reviews took longer than expected. Sophie will talk about what we're changing there.
+[00:04:35] Laura Chen: On spending, we're in a good position. We have more than three years of runway, and we're on track to be cash flow positive in the second half of next year.
+[00:05:30] Laura Chen: Okay, over to Mark for product and engineering.
+[00:05:40] Mark Davis: Thanks Laura. I want to cover three things, what we shipped, what's coming next quarter, and how we're doing on reliability.
+[00:06:30] Mark Davis: In Q3 we shipped the redesigned meeting workspace, speaker analytics, and the HubSpot integration. The new workspace is now used in seventy percent of sessions, and the time to find a moment in a meeting dropped by forty percent.
+[00:07:35] Mark Davis: Next quarter, the headline is AI search. You'll be able to ask questions across all your meetings in plain language. The internal beta starts on November fourth, and the public launch is planned for November eighteenth.
+[00:08:40] Mark Davis: We're also starting the mobile app. The beta will open in January, and design is already running usability tests with customers.
+[00:09:30] Mark Davis: Enterprise single sign-on is the third big item. It unblocks several deals that Sophie's team is working on, so it's the top priority for the platform team.
+[00:10:25] Mark Davis: Reliability. Uptime for the quarter was ninety nine point nine five percent, which beats our target. We did have one serious incident in August, when transcription was delayed for about two hours.
+[00:11:30] Mark Davis: The root cause was a database migration that locked a large table during peak hours. Large migrations now run only in the maintenance window, and we added automated checks to our deploy pipeline.
+[00:12:40] Mark Davis: I also want to thank the on-call engineers. We reduced the number of pages per week from twenty to six, mostly by fixing noisy alerts.
+[00:13:35] Mark Davis: Finally, hiring. We're hiring four engineers this quarter, including two for the AI search team. If you know great people, please send them our way through the referral program.
+[00:14:30] Mark Davis: That's it from me. Sophie, over to you.
+[00:14:38] Sophie Turner: Thanks Mark. The sales team had a record quarter in new revenue, even though, as Laura mentioned, we missed the enterprise logo target.
+[00:15:35] Sophie Turner: We signed one hundred and forty new customers. The biggest was a logistics company with six hundred seats, which is now our largest account.
+[00:16:40] Sophie Turner: The main lesson from the missed enterprise target is that we started security reviews too late in the sales cycle. Deals were ready to sign, then waited six to eight weeks for security approval.
+[00:17:45] Sophie Turner: So starting this month, solutions engineers will send our security package in the first week of every enterprise deal, not at the end. We're also building a public trust center with our SOC 2 report and policies.
+[00:18:55] Sophie Turner: For next quarter, our goal is twenty enterprise logos. Single sign-on and AI search are the two features prospects ask about most, so the timing with Mark's roadmap is great.
+[00:20:00] Sophie Turner: We're also expanding into the UK. We hired our first two account executives in London, and they start in November.
+[00:21:05] Sophie Turner: One ask for everyone. If you hear customer feedback in any meeting, please tag it in our feedback channel. It really helps us prioritize.
+[00:22:00] Sophie Turner: That's all from sales. Ahmed, go ahead.
+[00:22:08] Ahmed Rashid: Thanks Sophie. Good morning everyone. I have updates on hiring, the engagement survey, benefits, and our office plans.
+[00:23:10] Ahmed Rashid: We welcomed twenty two new people this quarter, and we're now one hundred and sixty people across eight countries. Please give our new joiners a warm welcome in the welcome channel.
+[00:24:20] Ahmed Rashid: The engagement survey had a ninety one percent response rate, thank you. Overall engagement went up four points to seventy eight.
+[00:25:30] Ahmed Rashid: The strongest areas were manager support and belief in the mission. The weakest areas were career growth clarity and meeting load.
+[00:26:40] Ahmed Rashid: On career growth, we're publishing career ladders for every function by the end of November. Each ladder will describe the expectations for every level, with examples.
+[00:27:50] Ahmed Rashid: On meeting load, we're trying a pilot called focus Wednesdays. No internal meetings on Wednesday afternoons for the next two months. We'll measure whether it helps.
+[00:28:55] Ahmed Rashid: Benefits. Starting in January, the learning budget goes up from one thousand to fifteen hundred dollars per person per year, and it now covers conferences as well as courses.
+[00:30:05] Ahmed Rashid: Offices. Our lease in Austin ends in March, and we'll move to a smaller space downtown. Most people come in two days a week, so we don't need the full floor anymore.
+[00:31:15] Ahmed Rashid: Our remote-first policy is not changing. The offices are there for people who want them, and for team offsites.
+[00:32:20] Ahmed Rashid: That's my update. Laura, back to you for questions.
+[00:32:30] Laura Chen: Thanks Ahmed. Let's open it up. We collected questions in advance, and you can also ask live. Kevin, you're first.
+[00:32:50] Kevin O'Brien: Thanks. With AI search launching in November, how are we making sure the support team is ready for the questions customers will have?
+[00:33:40] Mark Davis: Great question. The product team will run two training sessions for support before the public launch, and we're writing help center articles during the beta.
+[00:34:35] Laura Chen: Mark, can you also make sure support has access to the internal beta from day one?
+[00:34:45] Mark Davis: Yes, I'll add the whole support team to the beta on November fourth.
+[00:35:30] Laura Chen: Next question, from Ana.
+[00:35:38] Ana Silva: Hi everyone. There's a rumor that we're changing the equity refresh policy. Can you clarify what's happening?
+[00:36:30] Laura Chen: Thanks for asking directly, Ana. We're not reducing anything. We're moving refresh grants from an annual cycle to the performance review cycle, so they're tied to growth conversations.
+[00:37:40] Ahmed Rashid: I'll publish a short FAQ about the equity refresh change next week, and managers will be briefed before then.
+[00:38:45] Ana Silva: That's helpful, thank you.
+[00:39:00] Laura Chen: Next, Raj has a question about on-call.
+[00:39:08] Raj Patel: Yes. On-call has been much calmer, but it's still a burden on small teams. Is there any plan to compensate on-call work?
+[00:40:05] Mark Davis: Yes. We're finalizing an on-call stipend with finance. The plan is a fixed weekly amount plus extra pay for incidents outside working hours.
+[00:41:15] Ahmed Rashid: We aim to announce the details before the end of the quarter, and it will apply from January.
+[00:42:20] Raj Patel: Great, thanks.
+[00:42:30] Laura Chen: Here's a question from the advance list. Someone asked how we decide what goes on the roadmap, and whether engineers can influence it.
+[00:43:40] Mark Davis: The roadmap is built from three inputs, customer feedback, revenue impact, and engineering health. Every quarter, each team proposes projects, and we review them together with product.
+[00:44:55] Mark Davis: Engineers absolutely can influence it. Most of our reliability work this quarter came from engineers' proposals. I'll share the roadmap planning document in the engineering channel so everyone can see how it works.
+[00:46:10] Laura Chen: Another advance question. Are we planning layoffs, given the economy?
+[00:46:25] Laura Chen: No. We have no plans for layoffs. We're growing, we're well funded, and we're hiring. I'd rather be direct about this than let rumors spread.
+[00:47:40] Laura Chen: Next live question, Kevin again.
+[00:47:48] Kevin O'Brien: Will the focus Wednesdays apply to customer-facing teams too?
+[00:48:30] Ahmed Rashid: Customer meetings are exempt. The pilot only covers internal meetings, so sales and success can still meet customers on Wednesdays.
+[00:49:35] Laura Chen: Ana, you had a follow up?
+[00:49:40] Ana Silva: Yes, quickly. Will the career ladders include individual contributor tracks that go as high as management tracks?
+[00:50:35] Ahmed Rashid: Yes. Every function will have a senior individual contributor track that goes up to the same level as director. Growth shouldn't require becoming a manager.
+[00:51:50] Laura Chen: We have time for one or two more. Raj?
+[00:51:56] Raj Patel: When will we know the plan for the UK office?
+[00:52:40] Sophie Turner: We're starting with a coworking space in London. If the team grows past ten people, we'll look at a dedicated office next year.
+[00:53:50] Laura Chen: Last question from the advance list. What's the one thing leadership wants everyone to focus on this quarter?
+[00:54:10] Laura Chen: For me, it's the AI search launch. It's the biggest product moment of the year, and it touches every team, from engineering to marketing to support.
+[00:55:30] Mark Davis: And from engineering, quality. Let's ship it fast, but let's make sure it's reliable from day one.
+[00:56:40] Sophie Turner: And for sales, start the security process early in every enterprise deal.
+[00:57:45] Laura Chen: Great. Let me recap the follow ups. Ahmed will publish the equity FAQ next week, and the career ladders by the end of November.
+[00:58:55] Laura Chen: Mark will add support to the AI search beta and share the roadmap planning document. Ahmed and finance will announce the on-call stipend before the end of the quarter.
+[01:00:10] Laura Chen: I'll send the slides and the recording to everyone this afternoon, and please fill out the quick feedback form about this all-hands.
+[01:01:05] Laura Chen: Thank you all for the incredible work this quarter. Have a great rest of your day.

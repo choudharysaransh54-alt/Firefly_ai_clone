@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.500
+<v Olivia Park>Good morning everyone. Let's do a quick product sync on the mobile app beta.
+
+00:00:08.000 --> 00:00:18.000
+<v Ethan Brooks>Sure. The iOS build passed review yesterday, and the Android build is waiting on one crash fix in the audio player.
+
+00:00:18.500 --> 00:00:27.000
+<v Olivia Park>How long do you need for the crash fix?
+
+00:00:27.500 --> 00:00:39.000
+<v Ethan Brooks>About two days. I'll fix the Android crash and send a new build to the testers by Thursday.
+
+00:00:39.500 --> 00:00:52.000
+<v Nora Silva>From design, the onboarding screens are final. I still want to run one more usability test on the offline mode.
+
+00:00:52.500 --> 00:01:03.000
+<v Olivia Park>Nora, can you schedule that usability test for early next week and share the results in the channel?
+
+00:01:03.500 --> 00:01:10.000
+<v Nora Silva>Yes, I'll book five participants for Monday and Tuesday.
+
+00:01:10.500 --> 00:01:24.000
+<v Olivia Park>Great. The beta invite email should go out once both builds are ready. We need to finalize the invite list with marketing before Friday.
+
+00:01:24.500 --> 00:01:31.000
+<v Ethan Brooks>I'll also add crash reporting to the beta so we catch issues early.
+
+00:01:31.500 --> 00:01:38.000
+<v Olivia Park>Perfect. Thanks everyone, let's regroup on Friday.

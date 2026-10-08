@@ -1,0 +1,10 @@
+Maya Chen: Welcome to the sprint retro. Let's start with what went well this sprint.
+Diego Ruiz: The new deployment pipeline worked really well. We shipped four releases with zero rollbacks.
+Priyanka Rao: Pairing on the billing migration also went great. We finished it two days early.
+Maya Chen: Love it. What didn't go so well?
+Diego Ruiz: Code reviews were slow. Some pull requests waited more than two days for a review.
+Priyanka Rao: And the staging environment was down twice, which blocked QA.
+Maya Chen: Okay, two clear problems. Diego, can you propose a code review rotation so every pull request gets reviewed within one day?
+Diego Ruiz: Yes, I'll draft the rotation and share it by Friday.
+Priyanka Rao: I'll set up monitoring alerts for the staging environment so we know when it goes down.
+Maya Chen: Great. I'll add both items to the next sprint and we'll check progress at the next retro.
